@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorisation</title>
+    <link href="styles_login.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <form method="POST" action="http://localhost:3000/login.html">
+        <div class="background-login" id="login-form">
+            <div id="login-box">
+                <input class="input-data" placeholder="Login" name="login" required>
+                <input class="input-data" type="password" placeholder="Password" name="password" required>
+                <button id="button-login">Login</button>
+                <div><a id="button-going-reg" href="#">Register →</a></div>
+            </div>
+        </div>
+    </form>
+        <div class="background-login" id="register-form">
+            <div id="login-box">
+                <input class="input-data" placeholder="mail">
+                <input class="input-data" placeholder="Login" required>
+                <input class="input-data" type="password" placeholder="Password" required>
+                <input class="input-data" type="password" placeholder="Confirm password" required>
+                <button id="button-register">Register</button>
+                <div><a id="button-going-login" href="#">← Login</a></div>
+            </div>
+        </div>
+        <div class="background-login" id="okay-form">
+            <div id="button-okay">OKAY</div>
+        </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

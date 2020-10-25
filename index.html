@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>test_app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalmatien</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/f8b6ed9a6d.js"></script>
 </head>
+<header>
+    <div id="caption">
+        <span id="dalmatien">Dalmatien</span>
+        <span>
+            <span class="menu">
+                <i class="fa fa-user-circle"></i>
+            </span>
+            <span class="menu">
+                <i class="fa fa-envelope"></i>
+            </span>
+            <span class="menu">
+                <i class="fa fa-image"></i>
+            </span>
+        </span>
+    </div>
+</header>
 <body>
-  Hey there
+
+    <div class="main-message">
+        <div id="mHeader">
+            <a class="user-pic" href="#">
+                <img src="img/user.png">
+            </a>
+            <div class="username">
+                <a href="#">username</a>
+                <span class="menu">
+                    <i class="fa fa-ellipsis-h fa-2x" style="color: rgb(184, 183, 183)"></i>
+                </span>
+            </div>
+        </div>
+        <div id="mBody">
+            
+        </div>
+        <div id="mFooter">
+            <input id="input-message" placeholder="Введите сообщение">
+                <span id="icon_mes">
+                    <i class="fa fa-paper-plane"></i>
+                </span>
+        </div>
+    </div>
+
+    <div class="main-profile">
+        <div class="background-profile">
+            <div id="img-profile">
+                <div id="settings-profile">
+                    <span class="icons-profile">
+                        <i class="fa fa-angle-left fa-2x" style="color: rgb(184, 183, 183)"></i>
+                    </span>
+                    <span class="icons-profile" id="icon-settings-profile">
+                        <i class="fa fa-ellipsis-h fa-2x" style="color: rgb(184, 183, 183)"></i>
+                    </span>
+                </div>
+                <div class="info-profile" id="username-profile">Username</div>
+                <!-- <div class="info-profile" id="id-profile">User ID</div>
+                <div class="info-profile" id="message-profile">Message to all</div> -->
+            </div>
+            <div id="other-info-profile">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-pictures">
+        
+    </div>
+    <div id="button-split">Split</div>
+    <audio id="audio_bang">
+        <source src="Bang.mp3">
+    </audio>
+
+    <script src="msg.js"></script>
+    <script src="view.js"></script>
 </body>
 </html>
